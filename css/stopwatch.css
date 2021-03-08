@@ -1,0 +1,119 @@
+*{
+    margin:0;
+}
+/*** External Font ***/
+@font-face{
+    font-family: "Coluna";
+    src: local();
+    src: url('fonts/Coluna.otf');
+}
+@font-face{
+    font-family: "Montserrat Bold";
+    src: local();
+    src: url('../fonts/Montserrat-Bold.otf') format("opentype");
+}
+@font-face{
+    font-family: "Muro";
+    src: local();
+    src: url('../fonts/Muro.otf');
+}
+@font-face{
+    font-family: "DS-Digital";
+    src: local('DIGI');
+    src: url('../fonts/DIGI.ttf') format('truetype');
+}
+/*** End of Adding External Font ***/
+body{
+    background-color:#000000;
+}
+div.app-switcher{
+    padding-bottom:40px;
+    text-align:center;
+}
+button.stopwatch, button.countdown{
+    border:none;
+    outline:none;
+    padding:10px 20px;
+    margin-left:10px;
+    border-radius:0px 0px 10px 10px;
+}
+.active{
+    background-color: #00ff00;
+}
+div.stopwatch-holder{
+    padding:0px 30px 40px;  /* made changes here*/
+    border: 2px solid #00ff00;
+    width:60%;
+    margin:10% auto;
+    border-radius:8px;
+}
+div.heading, div.timer, div.control{
+    text-align:center;
+    width:80%;
+    margin:0 auto;
+}
+div.heading{
+    color:#ffffff;
+    background-color:#ff0000;
+    border-radius:30px;
+    padding: 20px 1px;
+    font-family: "Montserrat Bold";
+    letter-spacing: 1.5px;
+}
+div.heading h4{
+    padding-bottom:5px;
+}
+
+div.timer{
+    border:1px dashed #5eff00a7;
+    margin-top:30px;
+    padding:30px 20px;
+    border-radius:5px;
+    font-family: "DS-Digital";
+}
+div.timer span{
+    font-size:70px;
+    letter-spacing:2px;
+    color:#00ff00;
+}
+div.control{
+    margin-top:30px;
+}
+button{
+    border:none;
+    padding:10px 20px;
+    margin-left:10px;
+    border-radius:30px;
+}
+button a{
+    text-decoration:none;
+    font-size:18px;
+    padding:2px 10px;
+}
+button.up, button.down{
+    background-color:#ffff00;
+}
+button.up a, button.down a{
+    color:#000000;
+}
+button.start, button.set{
+    background-color:#00ff00;
+}
+button.reset{
+    background-color:#ff0000;
+}
+button.reset a, button.start a, button.set a{
+    color:#ffffff;
+}
+button.start:hover, button.reset:hover, button.up:hover, button.down:hover{
+    background-color:#c505ac;
+    transition: all 0.6s;
+}
+button.start:hover a, button.reset:hover a, button.up:hover a, button.down:hover a{
+    color:#ffffff;
+    transition: all 0.6s;
+}
+span.limit{
+    padding-right:55px;
+    color: #ff0000 !important;
+}
